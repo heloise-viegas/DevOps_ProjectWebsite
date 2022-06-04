@@ -1,3 +1,4 @@
+
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -71,6 +72,8 @@ config.vm.network "private_network", type: "dhcp"
 config.vm.provision "shell", inline: <<-END
 apt update
 apt install -y apache2
+apt --fix-broken install
+apache2 -v
 cp -r /vagrant/webcontent/* /var/www/html/
 echo "Machine provisioned at $(date)! Welcome!"
 END
