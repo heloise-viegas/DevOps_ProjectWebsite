@@ -6,6 +6,7 @@ TOOLS :
 - vagrant
 - oracle virtual box
 
+STEPS :
 - 1)Install vagrant
 - 2)Create an Ubuntu VM via vagrant
 - 3)Install Apache server on the VM
